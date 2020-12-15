@@ -2,12 +2,14 @@
 #### Repository for IRWA final project, UPF 2020/2021
 #### Javier Rando - Marc Teixidor - Eduard Vergés
 
-This repository contains the code for:
+This repository contains the code to implement a Search Engine for Tweets related with COVID-19. It is divided in 5 different sections:
 * Streaming tweets related with COVID using Twitter API and hydrate later with interactions: `search_engine/data_acquisition/`
 * Indexing this information to build a search engine: `search_engine/Indexing.ipynb`
 * A search engine interface to query the content: `search_engine/Search_Engine.ipynb`
 * 3 research questions that assess our search engine: output analysis, output diversification and link analysis: `notebook/`
 * Useful data for the search engine such as pretrained vectorizer and models: `data/`
+
+All code has been documented and details will be found to ensure reproducibility of the experimental setup.
 
 ----
 
