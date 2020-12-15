@@ -56,7 +56,7 @@ katniss  |  19-11-2020 at 15:54  |  No hashtags  | Favorites:  2  | Retweets:  0
 ### How is ranking performed?
 Our search engine will present results according to the similarity computed depending on the mode selected by the user (TF-IDF or TF-IDF+authority).
 
-On top of this similarity, we decided to implement a mask that will display first all those tweets having a full match in words with the query. The motivation for this additional feature is that we realized that since tweets are short, full matches are highly relevant. In other words, there is no place for finding full matches in irrelevant long documents by chance. This mask really improved the performance and relevance of the first results. It behaves as follows:
+On top of this similarity, we decided to implement a **mask** that will display first all those tweets containing all words in the query. The motivation for this additional feature is that we realized that since tweets are short, full matches are highly relevant. In other words, there is no place for finding full matches in irrelevant long documents by chance. This mask really improved the performance and relevance of the first results. It works as follows:
 * If there are **more full matches than the desired number of results**: full matches will be displayed ordered by relevance.
 * If there are **less full matches than the desired number of results**: full matches will be displayed first following relevance order, and then other documents will be shown by decreasing relevance (notice that relevance for full matches might be lower than relevance for partial matches but they will be shown first).
 * If there are **no full matches**: documents will be displayed ordered by relevance.
