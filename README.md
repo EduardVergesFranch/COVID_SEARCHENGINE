@@ -1,2 +1,5 @@
 # COVID_SEARCHENGINE
-Repository containing the final project of the course IRWA, UPF 2020/2021
+#### Repository for IRWA final project, UPF 2020/2021
+#### Javier Rando - Marc Teixidor - Eduard Vergés
+
+
