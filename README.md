@@ -30,3 +30,8 @@ After these four steps we will have a working search engine for COVID-19 related
 1. **Output analysis**. We study the output of our search engine and how the data can be clustered according to their embeddings. The code is found under [`notebook/RQ1_OutputAnalysis.ipynb`](https://github.com/EduardVergesFranch/COVID_SEARCHENGINE/blob/main/notebook/RQ1_OutputAnalysis.ipynb)
 2. **Output diversification**. We implement a fairness technique to ensure a fair representation of all semantic clusters within the first results in the ranking. Code is found in [`notebook/RQ2_OutputDiversification.ipynb`](https://github.com/EduardVergesFranch/COVID_SEARCHENGINE/blob/main/notebook/RQ2_OutputDiversification.ipynb)
 3. **Link analysis**. We generate a retweets graph for our dataset and implement different techniques to perform recommendations to users and evaluate their accuracy. We use this script [`notebook/RQ3_LinkAnalysis.ipynb`](https://github.com/EduardVergesFranch/COVID_SEARCHENGINE/blob/main/notebook/RQ3_LinkAnalysis.ipynb)
+
+----
+
+### Partial executions
+In the previously mentioned [Google Drive Folder](https://drive.google.com/drive/u/1/folders/16I4_ZCre59ufD9lDZbFK9cn1mALRmPjB), we have prepared all intermediate outputs to ease execution of independent parts of the pipeline. At the beggining of each notebook file, you will find the loading cells or further details about which sections can be skipped because output is already prepared.
