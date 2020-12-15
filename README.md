@@ -14,6 +14,8 @@ This repository contains the code for:
 ### Important note
 In order to fully execute the code, it is required to download all files contained in [this Google Drive folder](https://drive.google.com/drive/u/1/folders/16I4_ZCre59ufD9lDZbFK9cn1mALRmPjB) and store them in the `data/` folder.
 
-These files contain the corpus for our search engine and several intermediate steps that will avoid executing the full code to test a specific component
+These files contain the corpus for our search engine and several intermediate steps that will avoid executing the full code to test a specific component.
 
 ----
+
+### Execution pipeline
