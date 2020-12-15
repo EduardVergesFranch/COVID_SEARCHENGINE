@@ -19,3 +19,14 @@ These files contain the corpus for our search engine and several intermediate st
 ----
 
 ### Execution pipeline
+To simulate the whole experimental process, you will need to follow these steps:
+1. Stream around 100.000 tweets related to COVID-19 using [`search_engine/data_acquisition/Crawler.ipynb`](https://github.com/EduardVergesFranch/COVID_SEARCHENGINE/blob/main/search_engine/data_acquisition/Crawler.ipynb)
+2. Hydrate these tweets after several days to include information about their interactions with [`search_engine/data_acquisition/Hydrate_Tweets.ipynb`](https://github.com/EduardVergesFranch/COVID_SEARCHENGINE/blob/main/search_engine/data_acquisition/Hydrate_Tweets.ipynb)
+3. Now, we have our corpus ready to build a search engine. The first step will be indexing the information. For this, use [`search_engine/Indexing.ipynb`](https://github.com/EduardVergesFranch/COVID_SEARCHENGINE/blob/main/search_engine/Indexing.ipynb)
+4. The previous script will store all the components that will be required by our final search engine that can be declared and executed through [`search_engine/Search_Engine.ipynb`](https://github.com/EduardVergesFranch/COVID_SEARCHENGINE/blob/main/search_engine/Search_Engine.ipynb). More information about the funcionalities will be found in the search engine README file.
+
+After these four steps we will have a working search engine for COVID-19 related tweets. Afterwards, we can execute the code for 3 different research questions:
+
+1. **Output analysis**. We study the output of our search engine and how the data can be clustered according to their embeddings. The code is found under [`notebook/RQ1_OutputAnalysis.ipynb`](https://github.com/EduardVergesFranch/COVID_SEARCHENGINE/blob/main/notebook/RQ1_OutputAnalysis.ipynb)
+2. **Output diversification**. We implement a fairness technique to ensure a fair representation of all semantic clusters within the first results in the ranking. Code is found in [`notebook/RQ2_OutputDiversification.ipynb`](https://github.com/EduardVergesFranch/COVID_SEARCHENGINE/blob/main/notebook/RQ2_OutputDiversification.ipynb)
+3. **Link analysis**. We generate a retweets graph for our dataset and implement different techniques to perform recommendations to users and evaluate their accuracy. We use this script [`notebook/RQ3_LinkAnalysis.ipynb`](https://github.com/EduardVergesFranch/COVID_SEARCHENGINE/blob/main/notebook/RQ3_LinkAnalysis.ipynb)
